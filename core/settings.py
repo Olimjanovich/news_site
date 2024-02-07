@@ -86,8 +86,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER', default='postmaster@sandboxe9d791e7628342ddacc6e1ead2f134e8.mailgun.org')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', default='django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_')
 EMAIL_USE_TLS = True
 
 # Database
