@@ -20,15 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 import environ
-
-env = environ.Env()
-environ.Env.read_env(env_file=str(BASE_DIR) + '/.env')
+CSRF_TRUSTED_ORIGINS = ['https://articles-site-v0s10.onrender.com', 'https://127.0.0.1:8080']
+# env = environ.Env()
+# environ.Env.read_env(env_file=str(BASE_DIR) + '/.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
-
+# SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY="django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_"
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG', default=False)
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,8 +86,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = env('EMAIL_HOST_USER', default='postmaster@sandboxe9d791e7628342ddacc6e1ead2f134e8.mailgun.org')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', default='django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_')
+EMAIL_HOST_USER = 'postmaster@sandboxe9d791e7628342ddacc6e1ead2f134e8.mailgun.org'
+EMAIL_HOST_PASSWORD = 'c87c8f8159d42d87f2536670b9cc6777-8c90f339-59f59c6e'
+# EMAIL_HOST_USER = env('EMAIL_HOST_USER', default='postmaster@sandboxe9d791e7628342ddacc6e1ead2f134e8.mailgun.org')
+# EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', default='django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_')
 EMAIL_USE_TLS = True
 
 # Database
