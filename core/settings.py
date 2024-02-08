@@ -26,9 +26,9 @@ CSRF_TRUSTED_ORIGINS = ['https://articles-site-v0s10.onrender.com', 'https://127
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = env('SECRET_KEY')
-SECRET_KEY="django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_"
+SECRET_KEY = "django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_"
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
