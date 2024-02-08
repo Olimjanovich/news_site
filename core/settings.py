@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 import environ
-CSRF_TRUSTED_ORIGINS = ['https://articles-site-v0s10.onrender.com', 'https://127.0.0.1:8080']
+CSRF_TRUSTED_ORIGINS = ['https://articles-site.onrender.com', 'https://127.0.0.1:8080']
 # env = environ.Env()
 # environ.Env.read_env(env_file=str(BASE_DIR) + '/.env')
 
